@@ -1,3 +1,5 @@
+package ListaExercicios2;
+
 public class Exercicio13 {
     public static void main(String[] args) {
         int qntdColunas = 10;
