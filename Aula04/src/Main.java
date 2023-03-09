@@ -1,3 +1,5 @@
+package Aula04.src;
+
 public class Main {
     public static void main(String[] args) {
         Lista lista = new Lista();
@@ -8,6 +10,6 @@ public class Main {
 
 
 //      System.out.println(lista.retornarDados(2));
-        System.out.println(lista.buscaTelefone("aaaa"));
+        System.out.println(lista.buscaTelefone("Jaj"));
     }
 }
