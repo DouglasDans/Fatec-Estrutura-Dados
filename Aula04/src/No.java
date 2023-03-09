@@ -1,9 +1,11 @@
 public class No {
-    Object info;
+    String nome;
+    String tel;
     No proximo;
 
-    No(Object info){
-        this.info = info;
+    No(String nome, String tel){
+        this.nome = nome;
+        this.tel = tel;
         proximo = null;
     }
 }

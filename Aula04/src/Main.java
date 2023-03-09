@@ -2,12 +2,12 @@ public class Main {
     public static void main(String[] args) {
         Lista lista = new Lista();
 
-        lista.add("Douglas");
-        lista.add("Jack");
-        lista.add("Predo");
-        lista.add("vito");
-        lista.add("gutasvo");
+        lista.add("Douglas", "987563594");
+        lista.add("Jaj", "940028922");
 
-        lista.imprimir();
+
+
+//      System.out.println(lista.retornarDados(2));
+        System.out.println(lista.buscaTelefone("aaaa"));
     }
 }
