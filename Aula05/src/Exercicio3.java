@@ -14,7 +14,5 @@ public class Exercicio3 {
             v1--;
             return v2 += mult(v1,v2);
         }
-
-
     }
 }
