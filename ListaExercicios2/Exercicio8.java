@@ -1,23 +1,25 @@
-package ListaExercicios2;
+ick example on how to use the `npm run` command in the context
+of nested workspaces. For a project containing multiple workspaces, e.g:
 
-import java.util.Scanner;
+```
+.
++-- package.json
+`-- packages
+   +-- a
+   |   `-- package.json
+   `-- b
+       `-- package.json
+```
 
-public class Exercicio8 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int vetor[] = new int[5];
-        int i = 0, numerosMenores = 0;
-        do{
-            System.out.println("Informe um valor");
-            vetor[i] = in.nextInt();
-            i++;
-        }while (i < 5);
+By running a command using the `workspace` option, it's possible to run the
+given command in the context of that specific workspace. e.g:
 
-        for (i = 0; i < vetor.length; i++){
-            if (vetor[i] < 0){
-                numerosMenores++;
-            }
-        }
-        System.out.println(numerosMenores + " numeros são negativos");
-    }
-}
+```
+npm run test --workspace=a
+```
+
+This will run the `test` script defined within the
+`./packages/a/package.json` file.
+
+Please note that you can also specify this argument multiple times in the
+command-line in order to target multiple wo
